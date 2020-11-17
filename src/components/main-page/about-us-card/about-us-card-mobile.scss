@@ -1,0 +1,57 @@
+@import '../../../theme/screen-size.scss';
+
+@media only screen and (max-width: $mobile-screen) {
+    .sub-container-info {
+        margin-right: 0px;
+    }
+
+    .about-us-card {
+        position: relative;
+        padding: 40px 0 !important;
+
+        .container-about-us {
+            width: 100%;
+            display: unset;
+
+            .left-box {
+                width: 100%;
+
+                .help-action {
+                    visibility: hidden;
+                }
+            }
+
+            .right-box {
+                visibility: hidden;
+            }
+
+            .containers {
+                display: inline;
+                margin: auto;
+
+                .sub-container {
+                    width: 70% !important;
+                    margin: auto;
+
+                    .selected-img {
+                        min-width: 450px;
+                    }
+
+                    .img-box {
+                        .image {
+                            margin: auto;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .title {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

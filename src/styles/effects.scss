@@ -1,0 +1,97 @@
+@import '../styles/theme.scss';
+
+// Effects and Animations
+$duration: .4s;
+
+.effect-slide-left {
+    animation-name: slide_left;
+    animation-duration: $duration;
+}
+
+.effect-slide-top {
+    animation-name: slide_top;
+    animation-duration: $duration;
+}
+
+.effect-slide-right {
+    animation-name: slide_right;
+    animation-duration: $duration;
+}
+
+.effect-slide_bottom {
+    animation-name: slide_bottom;
+    animation-duration: $duration;
+}
+
+.effect-opacity {
+    animation-name: opacity_effect;
+    animation-duration: .2s;
+}
+
+@keyframes slide_left {
+    0% {
+        left: -5vw;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        right: -5vw;
+
+    }
+
+    100% {
+        right: 0;
+
+    }
+}
+
+@keyframes slide_top {
+    0% {
+        top: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide_bottom {
+    0% {
+        left: 0;
+        top: -100px;
+    }
+
+    100% {
+        left: 0;
+        top: 0px;
+    }
+}
+
+@keyframes opacity_effect {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidde_effect {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

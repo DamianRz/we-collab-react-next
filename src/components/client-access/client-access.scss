@@ -1,0 +1,47 @@
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.login-box {
+  position: relative;
+  width: 100%;
+  height: max-content;
+
+  .success_message {
+    color: rgb(129, 235, 129);
+  }
+
+  .error_message {
+    color: rgb(235, 129, 129);
+    margin: 0 40px;
+  }
+}
+
+.sub-title {
+  margin-bottom: 40px;
+}
+
+.client_info-box {
+  position: relative;
+  width: 100%;
+  overflow-x: none;
+  text-align: center;
+
+  .success_message {
+    color: rgb(129, 235, 129);
+  }
+
+  .error_message {
+    color: rgb(235, 129, 129);
+  }
+
+  .access_btn {
+    margin-top: 10px;
+  }
+}

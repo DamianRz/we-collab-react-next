@@ -1,0 +1,13 @@
+.search-field {
+  // display: flex;
+
+  .search-btn {
+    position: relative;
+    top: 30px;
+    margin-left: 10px;
+  }
+
+  input {
+    text-transform: lowercase;
+  }
+}

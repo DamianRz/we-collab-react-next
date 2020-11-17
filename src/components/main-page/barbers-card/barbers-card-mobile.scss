@@ -1,0 +1,14 @@
+@import '../../../theme/screen-size.scss';
+
+@media only screen and (max-width: $size-sm) {
+    .barber-card {
+        .barber-step {
+            .barber-img {
+                margin: auto;
+                border-radius: 50%;
+                width: calc(240px + 5vw);
+                height: calc(240px + 5vw);
+            }
+        }
+    }
+}

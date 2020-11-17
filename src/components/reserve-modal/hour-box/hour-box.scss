@@ -1,0 +1,44 @@
+.hours-box {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 3px solid rgba(160, 160, 150, 0.102) !important;
+
+  .hour-item {
+    position: relative;
+    height: max-content;
+    margin: auto;
+    margin: 2px;
+    border-radius: 4px;
+    color: white;
+
+    button:hover {
+      background: rgb(146, 144, 108);
+      transition: all ease 0.9s;
+    }
+
+    .hour {
+      color: rgb(214, 214, 214);
+    }
+  }
+
+  .hour-item:hover {
+    background-color: rgba(255, 255, 255, 0.178);
+  }
+
+  .selected-hour {
+    button {
+      background-color: rgb(146, 144, 108) !important;
+
+      p {
+        color: white !important;
+      }
+    }
+  }
+}

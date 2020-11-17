@@ -1,0 +1,40 @@
+.button {
+  .button-holder {
+    position: relative;
+    text-align: center;
+    display: inline-flex;
+
+    button {
+      position: relative;
+      outline: none;
+      font-size: 12px;
+      padding: 8px 20px 8px 20px;
+      transition: box-shadow .3s;
+      border-radius: 4px;
+      border-style: none;
+      display: flex !important;
+
+      .button-content {
+        position: relative;
+        width: 100%;
+        display: flex;
+      }
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .label_button {
+      margin: 0;
+    }
+  }
+
+  .disabled {
+    opacity: 0.2;
+
+    button:hover {
+      cursor: initial !important;
+    }
+  }
+}

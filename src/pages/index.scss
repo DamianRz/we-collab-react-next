@@ -1,0 +1,120 @@
+@import '../styles/theme.scss';
+
+.index_page {
+  position: absolute;
+  width: 100vw !important;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  // ANCHORS
+  #banner {
+    position: relative;
+    width: 20px;
+    bottom: 50px;
+  }
+
+  #about_us {
+    position: relative;
+    width: 20px;
+    bottom: 50px;
+  }
+
+  #barbers {
+    position: relative;
+    width: 20px;
+    bottom: 50px;
+  }
+
+  #services {
+    position: relative;
+    width: 20px;
+    bottom: 50px;
+  }
+
+  #courses {
+    position: relative;
+    width: 20px;
+    bottom: 50px;
+  }
+
+  #contact {
+    position: relative;
+    width: 20px;
+    bottom: 50px;
+  }
+
+  .page-box {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 81px);
+
+    .dashboard {
+      position: relative;
+      top: 0px;
+      width: 100%;
+      min-height: 100px;
+      height: max-content;
+
+      .about-us-card {
+        .info {
+          color: white;
+        }
+      }
+
+      .services-card.dark {
+        background-color: $secondary-dark;
+      }
+
+      .services-card.light {
+        background-color: $secondary-light;
+      }
+
+      .courses-card.dark {
+        background-color: $secondary-dark;
+      }
+
+      .courses-card.light {
+        background-color: $secondary-light;
+      }
+    }
+  }
+}
+
+.divider-content {
+
+  h1 {
+    color: $light-text !important;
+  }
+}
+
+.dialog {
+  display: flex;
+  align-items: center;
+
+  .dialog-modal {
+    width: 40%;
+    height: max-content !important;
+    text-align: center;
+
+    .content {
+      padding: 20px;
+
+      .course-info {
+        position: relative;
+        font-size: calc(1vw + 8px);
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .index_page {
+    .page-box {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}

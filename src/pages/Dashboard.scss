@@ -1,0 +1,216 @@
+@import '../styles/theme.scss';
+
+.titlex {
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  color: red;
+}
+
+.dashboard {
+  background-color: rgb(12, 12, 12);
+  height: max-content;
+
+  .info-text {
+    padding: 0;
+    margin: 0;
+    font-size: 22px !important;
+    font-style: bold;
+    color: white;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-text {
+    padding: 0;
+    margin: 0;
+    font-size: 22px !important;
+    font-style: bold;
+    color: white;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    color: $cool-color;
+    font-size: 30px;
+  }
+
+  .text {
+    padding: 0;
+    margin: 0;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  // .text {
+  //     padding: 0;
+  //     margin: 0;
+  //     color: rgb(0, 0, 0);
+  //     margin: auto;
+  //     margin-bottom: 20px;
+  // }
+
+  .services-box {
+    position: relative;
+    top: 40px;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+
+    .service {
+      position: relative;
+      height: max-content;
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+
+      .icon {
+        color: $cool-color !important;
+        height: 100% !important;
+        margin-right: 32px;
+      }
+
+      .info-text {
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        text-align: left;
+      }
+    }
+  }
+
+  .hour-box {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 100px !important;
+    background-color: green;
+
+    .hour {
+      display: flex;
+      align-items: flex-end;
+
+      .info {
+        width: 50%;
+      }
+
+      .data {
+        width: 50%;
+        position: relative;
+        margin-left: auto;
+        text-align: right;
+      }
+
+      .text {
+        padding: 0;
+        margin: 0;
+        color: white;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+    filter: grayscale(1);
+
+    .left-box {
+      position: relative;
+      width: 50%;
+      height: max-content;
+    }
+
+    .right-box {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      display: inline;
+      // background-color: blue;
+
+      .hours-box {
+        position: relative;
+        top: 40px;
+        width: 80%;
+        height: 300px;
+
+        .hour {
+          display: flex;
+          align-items: flex-end;
+
+          .info {
+            width: 70%;
+          }
+
+          .data {
+            width: 50%;
+            position: relative;
+            margin-left: auto;
+            text-align: right;
+          }
+
+          .text {
+            padding: 0;
+            margin: 0;
+            color: white;
+            margin: auto;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .courses-box {
+        position: relative;
+        top: 40px;
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 100px;
+
+        .course {
+          position: relative;
+          height: max-content;
+          display: flex;
+          margin: auto;
+          margin-bottom: 20px;
+
+          .box-text {
+            position: absolute;
+            right: 70px !important;
+          }
+
+          .text-box {
+            text-align: right;
+          }
+
+          .icon {
+            margin-left: auto;
+            height: 100% !important;
+            margin-right: 0;
+            color: $cool-color;
+          }
+
+          .info-text {
+            position: relative;
+            margin: 0;
+            margin-top: 5px;
+            margin-right: 0 !important;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

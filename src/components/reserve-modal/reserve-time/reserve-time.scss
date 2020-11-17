@@ -1,0 +1,76 @@
+.time-box {
+  position: relative !important;
+  width: max-content;
+  margin: auto;
+
+  .hours-box {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid rgba(160, 160, 150, 0.102);
+
+    .container {
+      position: relative;
+      width: 70%;
+      height: max-content;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .hour-item {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 75px;
+        height: max-content;
+        margin: auto;
+        margin-bottom: 5px !important;
+        margin: 2px;
+        border-radius: 4px;
+        color: white;
+
+        .button {
+          width: 75px;
+        }
+
+        button:hover {
+          background: rgb(146, 144, 108);
+          transition: all ease 0.9s;
+        }
+
+        .hour {
+          color: rgb(214, 214, 214);
+        }
+      }
+
+      .hour-item:hover {
+        background-color: rgba(255, 255, 255, 0.178);
+      }
+
+      .selected-hour {
+        button {
+          background-color: rgb(146, 144, 108) !important;
+
+          p {
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+
+  .no-hours {
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../theme/screen-size.scss';
+
+@media only screen and (max-width: $size-sm) {
+    .slider {
+
+        .slick-prev,
+        .slick-next {
+            z-index: 1;
+            visibility: hidden;
+        }
+    }
+}

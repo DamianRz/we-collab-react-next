@@ -1,0 +1,81 @@
+@import '../../styles/theme.scss';
+@import '../../theme/colors.scss';
+
+$toolbar_height: 60px;
+
+// ANCHORS
+#start_page {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.toolbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: $toolbar_height;
+  background-color: $shadow-dark;
+
+  .left-box {
+    position: relative;
+    height: $toolbar_height;
+    width: max-content;
+    left: 0px;
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+      width: 100px;
+      margin-left: 20px;
+    }
+
+    .title-btn {
+      p {
+        color: rgb(146, 144, 108);
+        font-size: $text-size !important;
+      }
+    }
+
+    .toolbar-btn {
+      position: relative;
+
+      .label_button {
+        text-transform: uppercase;
+      }
+    }
+
+    @media only screen and (max-width: 310px) {
+      .logo-img {
+        visibility: hidden;
+        width: 50px !important;
+        margin-left: 0px;
+      }
+    }
+
+    @media only screen and (max-width: 460px) {
+      .logo-img {
+        visibility: hidden;
+        width: 90px;
+        margin-left: 0px;
+      }
+    }
+
+    @media only screen and (max-width: $mobile-screen) {
+      .toolbar-btn {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.right-box {
+  position: absolute;
+  height: $toolbar_height;
+  width: max-content;
+  right: 20px;
+  top: 0;
+  display: flex;
+  align-items: center;
+}

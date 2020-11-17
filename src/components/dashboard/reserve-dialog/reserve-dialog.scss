@@ -1,0 +1,35 @@
+.reserve-modal-dashboard {
+    display: flex;
+    align-items: center;
+    z-index: 999;
+
+    .dialog-modal {
+
+        .reserve_data-box {
+            position: relative;
+            margin: auto;
+            text-align: center;
+
+            .reserve_info {
+                font-size: 18px;
+                // color: rgb(170, 170, 170);
+            }
+        }
+    }
+
+    .submit-button-update {
+        background-color: none !important;
+
+        .footer {
+            background-color: none !important;
+
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        .reserve-modal {
+            height: 500px;
+            overflow-y: scroll;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../theme/fonts.scss';
+
+.card {
+  position: relative;
+  min-height: max-content;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .card_title {
+    position: relative;
+    font-size: $font-size-extra_big;
+    margin: 0;
+    color: rgb(146, 144, 108);
+  }
+
+  .card_subtitle {
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .card_content {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

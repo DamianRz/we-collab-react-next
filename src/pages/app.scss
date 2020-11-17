@@ -1,0 +1,49 @@
+@import '../styles/theme.scss';
+
+html {
+    background-color: #0c0c0c;
+}
+
+/* 
+  Adjusts in default styles HTML 
+*/
+
+/*
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*/
+
+
+/* body style */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-page;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px $shadow-color;
+}
+
+::-webkit-scrollbar-thumb {
+    height: max-content !important;
+    box-shadow: inset 0 0 3px $cool-color;
+    border-radius: 4px;
+}
+
+/* 'hidde' a element */
+a {
+    color: rgba(0, 0, 0, 0) !important;
+}

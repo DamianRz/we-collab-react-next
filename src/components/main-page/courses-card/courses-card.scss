@@ -1,0 +1,226 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/effects.scss';
+
+.course-card {
+    width: 100%;
+    height: max-content;
+
+    .containers {
+        min-height: 875px;
+    }
+
+    .sub-container-info {
+        margin-right: 50px;
+    }
+
+
+    .course-img {
+        img {
+            width: calc(250px + 4vw);
+            height: calc(250px + 4vw);
+        }
+    }
+
+
+    .employee-social {
+        width: 100%;
+        bottom: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        // text-align: center;
+        padding: 10px 0;
+
+        .employee-social-logo {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 0 20px 0 20px;
+            color: rgb(146, 144, 108);
+            border-radius: 50%;
+        }
+
+        .employee-social-logo:hover {
+            box-shadow: 0px 0px 30px 0px $warm-color;
+        }
+    }
+
+    // courses items
+    .courses-items {
+        width: max-content;
+        height: max-content;
+        // text-align: center;
+        border-right-style: solid;
+        border-color: $warm-color;
+        border-width: 1px;
+
+        .help-action {
+            position: absolute;
+            // z-index: 1;
+            text-transform: uppercase;
+            color: $cool-color;
+            writing-mode: vertical-lr;
+            left: 150px;
+            top: 40%;
+        }
+
+        .course-item {
+            position: relative;
+            width: 30%;
+            margin: 40px 20px 0 20px;
+            display: inline-table;
+            // text-align: center;
+
+            .course-img {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                filter: grayscale(1);
+            }
+
+            .course-name {
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            .course-url {
+                position: absolute;
+                bottom: 0px;
+                margin-left: 40%;
+            }
+        }
+
+        .course-item:hover {
+            .course-img {
+                filter: grayscale(0);
+                transition: all 500ms ease-out;
+            }
+
+            .course-name {
+                color: $cool-color;
+            }
+        }
+
+        .selected {
+            .course-img {
+                filter: grayscale(0);
+                transition: all 1s ease-out;
+            }
+
+            .course-name {
+                color: $cool-color;
+            }
+        }
+    }
+
+    // CASIO Calculator LFMAO
+    @media only screen and (max-width: 400px) {
+        .sub-container-info {
+            margin-right: 0;
+        }
+
+        .courses-items {
+            position: relative;
+            width: max-content;
+            margin: auto;
+            // overflow-x: scroll !important;
+            margin-bottom: 20px !important;
+
+            .course-item {
+                margin: 40px 10px 0 10px;
+
+                .course-img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    filter: grayscale(1);
+                }
+            }
+        }
+    }
+
+
+    .course-container {
+        .info {
+            color: white;
+        }
+    }
+
+    // image and info
+    .course-info {
+        width: 100%;
+        height: max-content;
+        // text-align: center;
+
+        .selected-img {
+            max-width: 250px;
+        }
+    }
+}
+
+// IPHONE5/SE
+@media only screen and (max-width: $mobile-screen) {
+    .sub-container-info {
+        margin-right: 0;
+    }
+
+    .course-card {
+        // background-color: red;
+
+        // MOBILE STYLE OF CONTAINER-PAGE
+        .container-course {
+            width: 100%;
+            display: unset;
+
+            .left-box {
+                width: 100%;
+
+                .help-action {
+                    visibility: hidden;
+                }
+
+                .courses-items {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    margin: auto;
+                    border-style: none;
+                    width: max-content;
+                }
+            }
+
+            .right-box {
+                visibility: hidden;
+            }
+
+            .containers {
+                display: inline;
+                margin: auto;
+
+                .sub-container {
+                    width: 70% !important;
+                    margin: auto;
+
+                    .selected-img {
+                        min-width: 450px;
+                    }
+
+                    .img-box {
+                        .image {
+                            margin: auto;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .title {
+                        // text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

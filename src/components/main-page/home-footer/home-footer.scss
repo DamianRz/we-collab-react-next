@@ -1,0 +1,85 @@
+@import '../../../theme/colors.scss';
+
+.footer-card {
+  .footer-map {
+    iframe {
+      width: calc(250px + 4vw);
+      height: calc(250px + 4vw);
+      border-radius: 50%;
+    }
+  }
+
+  .map-info {
+    margin-left: 40px;
+
+    .info-item {
+      display: flex;
+      text-align: left;
+
+      img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer-info {
+    width: 100%;
+    height: max-content;
+
+    .logo {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .footer-social {
+      position: relative;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10px;
+
+      .footer_logo-img {
+        position: relative;
+        width: 15vw;
+        height: auto;
+        min-width: 170px;
+        min-height: auto;
+        filter: drop-shadow(0 0 0 rgb(151, 115, 47));
+      }
+
+      .footer-social-logo {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 0 20px 0 20px;
+        color: rgb(146, 144, 108);
+        border-radius: 50%;
+      }
+
+      .footer-social-logo:hover {
+        box-shadow: 0px 0px 30px 0px rgb(58, 57, 44);
+      }
+    }
+
+    .footer-email {
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bussiness {
+      position: relative;
+      top: 10px;
+      text-align: center;
+      text-align: center;
+    }
+
+    .footer-bussiness-link {
+      text-align: center;
+    }
+  }
+}

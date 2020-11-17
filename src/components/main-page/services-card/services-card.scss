@@ -1,0 +1,38 @@
+@import '../../../styles/theme.scss';
+
+.service-divider {
+
+  .services-card {
+    text-align: center;
+    top: 60px;
+    z-index: 1;
+
+    .service-item {
+      position: relative;
+      width: 250px;
+      margin: 0;
+      display: inline-table;
+      text-align: center;
+
+      .service-icon {
+        font-size: 40px;
+        color: $cool-color;
+      }
+
+      .service-name {
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .service-info {
+        color: white;
+      }
+
+      .service-url {
+        position: absolute;
+        bottom: 0px;
+        margin-left: 40%;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+
+  .notification-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 120px;
+    padding: 0px 0px 5px 5px;
+    top: 20px;
+    display: flex;
+    cursor: pointer;
+    .notification-bell {
+      margin: auto;
+      width: 24px;
+      height: 24px;
+    }
+    .notification-circle {
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      top: -10px;
+      left: 25px;
+      background-color: red;
+      border-radius: 50%;
+      .notification-number {
+        position: absolute;
+        top: -8px;
+        left: 4px;
+        color: white;
+        font-size: 10px;
+      }
+    }
+  }
+  .notifications-menu {
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    z-index: 9999;
+
+    .notifications-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 20px;
+      color: rgb(36, 36, 36);
+    }
+    .no-notifications {
+      width: 200px;
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+    }
+    .notification {
+      display: flex;
+      padding-right: 10px;
+      .notification-info {
+        // background-color: Red;
+        width: 120px;
+        margin-left: 10px;
+        .event-name {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .event-date {
+          font-size: 12px;
+        }
+      }
+      .buttons-box {
+        display: flex;
+        right: 0px;
+        padding: 5px;
+        .item-list_btn {
+          margin-left: 10px;
+        }
+        .cancel-text {
+          font-size: 14px;
+        }
+      }
+    }
+    .notification.selected {
+      background-color: #E8F0FE;
+    }
+  }

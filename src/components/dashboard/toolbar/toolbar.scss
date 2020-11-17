@@ -1,0 +1,65 @@
+$toolbar_height: 60px;
+
+// ANCHORS
+#start_page {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.toolbar {
+  position: fixed;
+  // z-index: 999; 
+  width: 100%;
+  height: $toolbar_height;
+  background-color: #111111ed;
+  // box-shadow: 0 5px 5px #00000086;
+
+  .left-box {
+    position: relative;
+    height: $toolbar_height;
+    width: max-content;
+    left: 0px;
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+      width: 120px;
+      margin-left: 20px;
+    }
+
+    .title-btn {
+      p {
+        color: rgb(146, 144, 108);
+        font-size: 20px !important;
+      }
+    }
+
+    .toolbar-btn {
+      position: relative;
+    }
+
+    @media only screen and (max-width: 750px) {
+      .toolbar-btn {
+        visibility: hidden;
+      }
+
+      .left_box {
+        .menu-icon {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .right-box {
+    position: absolute;
+    height: $toolbar_height;
+    width: max-content;
+    right: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../theme/colors.scss';
+
+.dialog_activator-box {
+  position: relative;
+  width: max-content;
+  margin: 0px 0px 0px 20px;
+}
+
+.dialog-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: $shadow-dark;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+
+  .dialog-modal {
+    position: relative;
+    height: max-content;
+    margin: auto;
+    width: max-content;
+    border-radius: 8px;
+    background-color: $shadow-color;
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      align-items: center;
+
+      .header-title {
+        margin: auto;
+
+        .title {
+          position: relative;
+          width: max-content;
+          margin: 0;
+          padding: 0;
+          // color: $warm-color;
+        }
+      }
+
+      .close_btn-box {
+        position: absolute;
+        width: max-content;
+        height: 50%;
+        width: 40px;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        .close_btn {
+          position: relative;
+          z-index: 1;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .content {
+      position: relative;
+      padding-top: 0 !important;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .dialog-footer {
+      position: relative;
+      width: 100%;
+      height: max-content;
+    }
+  }
+}

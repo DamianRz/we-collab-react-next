@@ -1,0 +1,26 @@
+Consiste en la creacion de un sistema de themes capas de cambiar de forma simple,
+formato de obtencion por base de datos por attb theme
+
+theme={ dark | light | custom={text={}, colors={}} }
+
+Es requerida la asignacion del theme por js, y acciona el css
+
+
+Inicio: get theme by context
+proceso en cada componente: obtener el theme.
+
+///////////////////////////////////////////////////////
+
+un componente para todo el texto del sistema
+
+4 dimensiones de texto
+2 estilos
+3 colores
+
+A partir del type se relacionara a un estilo definido en theme
+
+title: 'title' | 'subtitle' | 'text' 
+
+<ThemedText type="title" className="email">
+    {props.email}
+</ThemedText>

@@ -1,0 +1,48 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/effects.scss';
+
+.barber-card {
+    width: 100%;
+    height: max-content;
+
+    .barber-step {
+        width: 80% !important;
+
+        .barber-item {
+            .barber-name {
+                margin-bottom: 20px;
+            }
+        }
+
+        .barber-img {
+            margin: auto;
+            border-radius: 20px;
+            width: 450px;
+            height: 600px;
+        }
+
+
+        .employee-social {
+            width: 100%;
+            bottom: 0px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            text-align: center;
+            padding: 10px 0;
+
+            .employee-social-logo {
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin: 0 20px 0 20px;
+                color: rgb(146, 144, 108);
+                border-radius: 50%;
+            }
+
+            .employee-social-logo:hover {
+                box-shadow: 0px 0px 30px 0px $warm-color;
+            }
+        }
+    }
+}

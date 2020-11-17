@@ -1,0 +1,132 @@
+@import '../styles/theme.scss';
+
+$font-size-button: 12px;
+
+.theme-button {
+    button {
+        height: 33px;
+        border-style: solid !important;
+        // border-radius: 4px;
+        border-width: 1px;
+        background: $warm-color;
+        display: flex;
+        align-items: center;
+
+        .label_button {
+            text-transform: uppercase;
+            font-size: $font-size-button;
+        }
+
+        .icon-box {
+            svg {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+    }
+
+    button:hover {
+        background: $primary-dark !important;
+        transition: all ease 0.9s;
+        border-color: $cool-color;
+
+        p {
+            color: $cool-color;
+        }
+
+        .icon {
+            color: white;
+        }
+    }
+}
+
+.theme-button-text {
+    button {
+        background: rgba(0, 0, 0, 0) !important;
+
+        p {
+            color: rgb(165, 165, 165);
+            font-size: $font-size-button;
+        }
+    }
+
+    button:hover {
+        p {
+            color: $cool-color;
+        }
+    }
+
+    .theme-icon {
+        color: white;
+    }
+}
+
+.theme-button-text:hover {
+    .theme-icon {
+        color: $cool-color;
+    }
+}
+
+.theme-button-outlined {
+    button {
+        height: 33px;
+        border-style: solid !important;
+        // border-radius: 4px;
+        border-width: 1px;
+        border-color: $cool-color !important;
+        background: rgba(0, 0, 0, 0) !important;
+        display: flex;
+        align-items: center;
+
+        .icon-box {
+            svg {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                color: $warm-color;
+            }
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            color: rgb(165, 165, 165);
+            font-size: $font-size-button;
+        }
+    }
+
+    button:hover {
+        background: rgb(146, 144, 108) !important;
+        transition: all ease 0.9s;
+
+        p {
+            color: white;
+        }
+
+        .icon {
+            color: white !important;
+        }
+    }
+}
+
+.theme-button-outlined:hover {
+    .icon-box {
+        svg {
+            color: white;
+        }
+    }
+
+    .theme-icon {
+        color: white;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../../theme/screen-size.scss';
+
+@media only screen and (max-width: $size-sm) {
+    .footer-card {
+        .footer-map {
+            margin-bottom: 20px;
+        }
+
+        .map-info {
+            margin-left: 0;
+        }
+    }
+}

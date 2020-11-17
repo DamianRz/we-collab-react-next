@@ -1,0 +1,139 @@
+@import '../../styles/effects.scss';
+@import '../../theme/screen-size.scss';
+
+$menu_size: 200px;
+
+.left_menu {
+  .dialog_activator-btn {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .activator_btn {
+    position: absolute;
+    visibility: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: $size-sm) {
+    .left_menu-dialog {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: $size-sm) {
+    .activator_btn {
+      visibility: visible;
+      position: relative;
+    }
+  }
+
+  .left_menu-dialog {
+    width: 100%;
+    text-align: center;
+
+    .left-menu-box {
+      position: relative;
+      width: 100% !important;
+      // background-color: red;
+    }
+
+    a {
+      position: relative;
+      top: 0 !important;
+    }
+
+    .logo {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: -60px;
+      text-align: center;
+      opacity: 0.1;
+      display: flex;
+      align-items: center;
+
+      .logo-img {
+        width: 100vw;
+        max-width: 600px;
+        max-height: 750px;
+        min-width: 300px;
+        min-height: 375px;
+        height: auto;
+        visibility: visible;
+        margin: auto;
+      }
+    }
+
+    button {
+      width: 100%;
+      text-align: center;
+
+      p {
+        margin: auto !important;
+      }
+    }
+
+    .dialog-modal {
+      height: 100%;
+
+      .header {
+        height: 60px;
+        border-radius: 0;
+
+        .close_btn-box {
+          text-align: left;
+
+          .close_btn {
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
+      .left_menu-btn {
+        position: relative;
+        margin-bottom: 60px;
+        width: 100%;
+
+        a {
+          width: 90%;
+          margin: auto;
+
+          button {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            .label_button {
+              display: inline;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .footer {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    right: 100vw;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}

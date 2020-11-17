@@ -1,0 +1,14 @@
+@import '../../../theme/screen-size.scss';
+
+@media only screen and (max-width: $size-sm) {
+    .container-page {
+        .containers {
+            width: 80vw;
+            display: initial;
+
+            .sub-container {
+                width: 100% !important;
+            }
+        }
+    }
+}

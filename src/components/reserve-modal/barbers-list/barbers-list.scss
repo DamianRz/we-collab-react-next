@@ -1,0 +1,64 @@
+// BarbersBox
+
+.barbers-box {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow-x: none;
+
+  .list_barbers-box {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: auto;
+  }
+}
+
+// BarberItem
+
+.barber {
+  position: relative;
+  width: 90%;
+  height: max-content;
+  margin: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 80px;
+  display: flex;
+
+  .img {
+    position: relative;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    top: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.329);
+    border-radius: 50%;
+    filter: grayscale(1);
+  }
+
+  .barber-name {
+    position: absolute;
+    left: 90px;
+    top: 0px;
+  }
+}
+
+.barber:hover {
+  background-color: rgba(146, 144, 108, 0.300);
+  transition: all ease 0.9s;
+
+  .img {
+    filter: grayscale(0);
+  }
+}
+
+.selected-barber {
+  background-color: rgba(146, 144, 108, 0.300);
+
+  .img {
+    filter: grayscale(0);
+  }
+}

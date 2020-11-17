@@ -1,0 +1,90 @@
+@import '../../../styles/theme.scss';
+
+.container-page {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+
+  .left-box {
+    width: 20vw;
+    height: max-content;
+  }
+
+  .right-box {
+    position: relative;
+    width: 20vw;
+    right: 0;
+    height: max-content;
+  }
+
+  .containers {
+    position: relative;
+    width: 70vw;
+    display: flex;
+
+    .sub-container {
+      position: relative;
+      width: max-content;
+      height: max-content;
+    }
+  }
+}
+
+// SubContainerInfo
+.info-box {
+  text-align: center;
+
+  .title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .info {
+    color: white;
+  }
+}
+
+.payform-container-style {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #a5a262;
+}
+
+li {
+  content: '👉';
+}
+
+// SubContainerImage
+.img-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  .image {
+    margin-left: auto;
+    height: max-content;
+    width: max-content;
+
+    img {
+      height: 100%;
+      max-width: 450px;
+      max-height: 650px;
+      object-fit: cover;
+      border-color: $cool-color;
+      border-width: 4px;
+      border-radius: 8px;
+      margin: auto;
+      box-shadow: 0px 5px 10px $shadow-color;
+    }
+  }
+
+  .image-footer {
+    position: relative;
+    // z-index: 1;
+    width: 100%;
+    height: max-content;
+  }
+}
